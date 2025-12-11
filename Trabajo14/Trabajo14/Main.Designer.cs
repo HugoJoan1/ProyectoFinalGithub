@@ -70,6 +70,7 @@ namespace Trabajo14
 			this.calificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.boletaDeCalificacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.autoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.lblAdvv = new System.Windows.Forms.Label();
@@ -149,7 +150,7 @@ namespace Trabajo14
 									this.kilometrosAMillasToolStripMenuItem});
 			this.longitudToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.longitudToolStripMenuItem.Name = "longitudToolStripMenuItem";
-			this.longitudToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.longitudToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.longitudToolStripMenuItem.Text = "&Longitud";
 			// 
 			// kilometrosAMillasToolStripMenuItem
@@ -169,7 +170,7 @@ namespace Trabajo14
 									this.kilogramosALToolStripMenuItem});
 			this.masaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.masaToolStripMenuItem.Name = "masaToolStripMenuItem";
-			this.masaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.masaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.masaToolStripMenuItem.Text = "&Masa";
 			// 
 			// kilogramosALToolStripMenuItem
@@ -189,7 +190,7 @@ namespace Trabajo14
 									this.celciusAFahrenheitToolStripMenuItem});
 			this.temperaturaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.temperaturaToolStripMenuItem.Name = "temperaturaToolStripMenuItem";
-			this.temperaturaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.temperaturaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.temperaturaToolStripMenuItem.Text = "&Temperatura";
 			// 
 			// celciusAFahrenheitToolStripMenuItem
@@ -209,7 +210,7 @@ namespace Trabajo14
 									this.segundosAHorasToolStripMenuItem});
 			this.tiempoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.tiempoToolStripMenuItem.Name = "tiempoToolStripMenuItem";
-			this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.tiempoToolStripMenuItem.Text = "&Tiempo";
 			// 
 			// segundosAHorasToolStripMenuItem
@@ -237,7 +238,7 @@ namespace Trabajo14
 			this.factorialToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
 			this.factorialToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.factorialToolStripMenuItem.Name = "factorialToolStripMenuItem";
-			this.factorialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.factorialToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
 			this.factorialToolStripMenuItem.Text = "&Factorial";
 			this.factorialToolStripMenuItem.Click += new System.EventHandler(this.FactorialToolStripMenuItemClick);
 			// 
@@ -246,7 +247,7 @@ namespace Trabajo14
 			this.fibonacciToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
 			this.fibonacciToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.fibonacciToolStripMenuItem.Name = "fibonacciToolStripMenuItem";
-			this.fibonacciToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.fibonacciToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
 			this.fibonacciToolStripMenuItem.Text = "F&ibonacci";
 			this.fibonacciToolStripMenuItem.Click += new System.EventHandler(this.FibonacciToolStripMenuItemClick);
 			// 
@@ -374,6 +375,8 @@ namespace Trabajo14
 			// 
 			// pasteleríayPostresToolStripMenuItem
 			// 
+			this.pasteleríayPostresToolStripMenuItem.BackColor = System.Drawing.Color.Black;
+			this.pasteleríayPostresToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.pasteleríayPostresToolStripMenuItem.Name = "pasteleríayPostresToolStripMenuItem";
 			this.pasteleríayPostresToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
 			this.pasteleríayPostresToolStripMenuItem.Text = "Pastelería &y Postres";
@@ -390,6 +393,8 @@ namespace Trabajo14
 			// 
 			// empleadoToolStripMenuItem1
 			// 
+			this.empleadoToolStripMenuItem1.BackColor = System.Drawing.Color.Black;
+			this.empleadoToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
 			this.empleadoToolStripMenuItem1.Name = "empleadoToolStripMenuItem1";
 			this.empleadoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
 			this.empleadoToolStripMenuItem1.Text = "E&mpleado";
@@ -406,6 +411,8 @@ namespace Trabajo14
 			// 
 			// boletaDeCalificacionesToolStripMenuItem
 			// 
+			this.boletaDeCalificacionesToolStripMenuItem.BackColor = System.Drawing.Color.Black;
+			this.boletaDeCalificacionesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.boletaDeCalificacionesToolStripMenuItem.Name = "boletaDeCalificacionesToolStripMenuItem";
 			this.boletaDeCalificacionesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
 			this.boletaDeCalificacionesToolStripMenuItem.Text = "&Boleta de Calificaciones";
@@ -413,10 +420,21 @@ namespace Trabajo14
 			// 
 			// acercaDeToolStripMenuItem
 			// 
+			this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.autoresToolStripMenuItem});
 			this.acercaDeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
 			this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
 			this.acercaDeToolStripMenuItem.Text = "&Acerca &de";
+			// 
+			// autoresToolStripMenuItem
+			// 
+			this.autoresToolStripMenuItem.BackColor = System.Drawing.Color.Black;
+			this.autoresToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+			this.autoresToolStripMenuItem.Name = "autoresToolStripMenuItem";
+			this.autoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.autoresToolStripMenuItem.Text = "A&utores";
+			this.autoresToolStripMenuItem.Click += new System.EventHandler(this.AutoresToolStripMenuItemClick);
 			// 
 			// pictureBox1
 			// 
@@ -610,6 +628,7 @@ namespace Trabajo14
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem autoresToolStripMenuItem;
 		private System.Windows.Forms.Label lblMostrador1;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Label label1;

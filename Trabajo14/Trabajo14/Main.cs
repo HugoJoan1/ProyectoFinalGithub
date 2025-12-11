@@ -105,14 +105,21 @@ namespace Trabajo14
 		{
 			int factorial,resu;
 			factorial=Convert.ToInt32(textBox1.Text);
-			resu = 1;
-			for(int i = 1; i <= factorial; i++)
+			if (factorial>=13)
+					{
+						lblResultado.Text="El máximo permitido de un factorial es 12";
+					}
+			else
 			{
-					resu = resu * i;
+				factorial=Convert.ToInt32(textBox1.Text);
+				resu = 1;
+					for(int i = 1; i <= factorial; i++)
+					{
+						resu = resu * i;
+					}
+				lblResultado.Text = resu.ToString();
 			}
-			lblResultado.Text = resu.ToString();			
-		}
-		
+		}	
 		void FibonacciToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			lblResultado.Text = "0,1,1,2,3,5,8,13,21,34,55,39,144,233,377,610,987,1597";			
@@ -217,6 +224,13 @@ namespace Trabajo14
 		{
 			Boleta bol=new Boleta();
 			bol.Show();
+			this.Hide();
+		}
+		
+		void AutoresToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			acercade ace=new acercade();
+			ace.Show();
 			this.Hide();
 		}
 	}

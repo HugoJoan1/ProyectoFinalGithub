@@ -36,35 +36,45 @@ namespace Trabajo14
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pasteleria));
 			this.listView1 = new System.Windows.Forms.ListView();
 			this.lblSubtotal = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
+			this.txtSubtotal = new System.Windows.Forms.TextBox();
+			this.txtDescuento = new System.Windows.Forms.TextBox();
+			this.ImporteNeto = new System.Windows.Forms.TextBox();
+			this.ImportePagado = new System.Windows.Forms.TextBox();
+			this.txtCambio = new System.Windows.Forms.TextBox();
+			this.btnGuardar = new System.Windows.Forms.Button();
+			this.btnBorrar = new System.Windows.Forms.Button();
+			this.btnImprimir = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox8 = new System.Windows.Forms.TextBox();
+			this.txtPrecio = new System.Windows.Forms.TextBox();
+			this.txtCantidad = new System.Windows.Forms.TextBox();
+			this.txtTotal = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
-			this.listBox1 = new System.Windows.Forms.ListBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.cmbProductos = new System.Windows.Forms.ComboBox();
+			this.btnSalir = new System.Windows.Forms.Button();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// listView1
 			// 
-			this.listView1.Location = new System.Drawing.Point(11, 165);
+			this.listView1.Location = new System.Drawing.Point(11, 273);
 			this.listView1.Name = "listView1";
 			this.listView1.Size = new System.Drawing.Size(701, 183);
 			this.listView1.TabIndex = 0;
@@ -72,7 +82,7 @@ namespace Trabajo14
 			// 
 			// lblSubtotal
 			// 
-			this.lblSubtotal.Location = new System.Drawing.Point(11, 351);
+			this.lblSubtotal.Location = new System.Drawing.Point(11, 459);
 			this.lblSubtotal.Name = "lblSubtotal";
 			this.lblSubtotal.Size = new System.Drawing.Size(91, 22);
 			this.lblSubtotal.TabIndex = 1;
@@ -80,7 +90,7 @@ namespace Trabajo14
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(227, 351);
+			this.label1.Location = new System.Drawing.Point(227, 459);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(105, 22);
 			this.label1.TabIndex = 2;
@@ -88,7 +98,7 @@ namespace Trabajo14
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(462, 356);
+			this.label2.Location = new System.Drawing.Point(462, 464);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(126, 22);
 			this.label2.TabIndex = 3;
@@ -96,93 +106,93 @@ namespace Trabajo14
 			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(462, 384);
+			this.label3.Location = new System.Drawing.Point(462, 492);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(126, 22);
 			this.label3.TabIndex = 4;
-			this.label3.Text = "Importe Neto: ";
+			this.label3.Text = "Importe Pagado: ";
 			// 
 			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point(462, 413);
+			this.label4.Location = new System.Drawing.Point(462, 521);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(126, 22);
 			this.label4.TabIndex = 5;
 			this.label4.Text = "Cambio: ";
 			// 
-			// textBox1
+			// txtSubtotal
 			// 
-			this.textBox1.Location = new System.Drawing.Point(94, 351);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(129, 27);
-			this.textBox1.TabIndex = 6;
+			this.txtSubtotal.Location = new System.Drawing.Point(94, 459);
+			this.txtSubtotal.Name = "txtSubtotal";
+			this.txtSubtotal.Size = new System.Drawing.Size(129, 27);
+			this.txtSubtotal.TabIndex = 6;
 			// 
-			// textBox2
+			// txtDescuento
 			// 
-			this.textBox2.Location = new System.Drawing.Point(328, 351);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(129, 27);
-			this.textBox2.TabIndex = 7;
+			this.txtDescuento.Location = new System.Drawing.Point(328, 459);
+			this.txtDescuento.Name = "txtDescuento";
+			this.txtDescuento.Size = new System.Drawing.Size(129, 27);
+			this.txtDescuento.TabIndex = 7;
 			// 
-			// textBox3
+			// ImporteNeto
 			// 
-			this.textBox3.Location = new System.Drawing.Point(584, 351);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(128, 27);
-			this.textBox3.TabIndex = 8;
+			this.ImporteNeto.Location = new System.Drawing.Point(584, 459);
+			this.ImporteNeto.Name = "ImporteNeto";
+			this.ImporteNeto.Size = new System.Drawing.Size(128, 27);
+			this.ImporteNeto.TabIndex = 8;
 			// 
-			// textBox4
+			// ImportePagado
 			// 
-			this.textBox4.Location = new System.Drawing.Point(584, 381);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(128, 27);
-			this.textBox4.TabIndex = 9;
+			this.ImportePagado.Location = new System.Drawing.Point(584, 489);
+			this.ImportePagado.Name = "ImportePagado";
+			this.ImportePagado.Size = new System.Drawing.Size(128, 27);
+			this.ImportePagado.TabIndex = 9;
 			// 
-			// textBox5
+			// txtCambio
 			// 
-			this.textBox5.Location = new System.Drawing.Point(584, 410);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(128, 27);
-			this.textBox5.TabIndex = 10;
+			this.txtCambio.Location = new System.Drawing.Point(584, 518);
+			this.txtCambio.Name = "txtCambio";
+			this.txtCambio.Size = new System.Drawing.Size(128, 27);
+			this.txtCambio.TabIndex = 10;
 			// 
-			// button1
+			// btnGuardar
 			// 
-			this.button1.BackColor = System.Drawing.Color.White;
-			this.button1.ForeColor = System.Drawing.Color.Black;
-			this.button1.Location = new System.Drawing.Point(12, 397);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(114, 38);
-			this.button1.TabIndex = 11;
-			this.button1.Text = "Guardar";
-			this.button1.UseVisualStyleBackColor = false;
+			this.btnGuardar.BackColor = System.Drawing.Color.White;
+			this.btnGuardar.ForeColor = System.Drawing.Color.Black;
+			this.btnGuardar.Location = new System.Drawing.Point(12, 505);
+			this.btnGuardar.Name = "btnGuardar";
+			this.btnGuardar.Size = new System.Drawing.Size(114, 38);
+			this.btnGuardar.TabIndex = 11;
+			this.btnGuardar.Text = "Guardar";
+			this.btnGuardar.UseVisualStyleBackColor = false;
 			// 
-			// button2
+			// btnBorrar
 			// 
-			this.button2.BackColor = System.Drawing.Color.White;
-			this.button2.ForeColor = System.Drawing.Color.Black;
-			this.button2.Location = new System.Drawing.Point(131, 397);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(114, 38);
-			this.button2.TabIndex = 12;
-			this.button2.Text = "Borrar";
-			this.button2.UseVisualStyleBackColor = false;
+			this.btnBorrar.BackColor = System.Drawing.Color.White;
+			this.btnBorrar.ForeColor = System.Drawing.Color.Black;
+			this.btnBorrar.Location = new System.Drawing.Point(131, 505);
+			this.btnBorrar.Name = "btnBorrar";
+			this.btnBorrar.Size = new System.Drawing.Size(114, 38);
+			this.btnBorrar.TabIndex = 12;
+			this.btnBorrar.Text = "Borrar";
+			this.btnBorrar.UseVisualStyleBackColor = false;
 			// 
-			// button3
+			// btnImprimir
 			// 
-			this.button3.BackColor = System.Drawing.Color.White;
-			this.button3.ForeColor = System.Drawing.Color.Black;
-			this.button3.Location = new System.Drawing.Point(250, 397);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(114, 38);
-			this.button3.TabIndex = 13;
-			this.button3.Text = "Imprimir";
-			this.button3.UseVisualStyleBackColor = false;
+			this.btnImprimir.BackColor = System.Drawing.Color.White;
+			this.btnImprimir.ForeColor = System.Drawing.Color.Black;
+			this.btnImprimir.Location = new System.Drawing.Point(250, 505);
+			this.btnImprimir.Name = "btnImprimir";
+			this.btnImprimir.Size = new System.Drawing.Size(114, 38);
+			this.btnImprimir.TabIndex = 13;
+			this.btnImprimir.Text = "Imprimir";
+			this.btnImprimir.UseVisualStyleBackColor = false;
 			// 
 			// button4
 			// 
 			this.button4.BackColor = System.Drawing.Color.White;
 			this.button4.ForeColor = System.Drawing.Color.Black;
-			this.button4.Location = new System.Drawing.Point(535, 121);
+			this.button4.Location = new System.Drawing.Point(535, 229);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(169, 38);
 			this.button4.TabIndex = 14;
@@ -193,7 +203,7 @@ namespace Trabajo14
 			// 
 			this.button5.BackColor = System.Drawing.Color.White;
 			this.button5.ForeColor = System.Drawing.Color.Black;
-			this.button5.Location = new System.Drawing.Point(535, 77);
+			this.button5.Location = new System.Drawing.Point(535, 185);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(169, 38);
 			this.button5.TabIndex = 15;
@@ -202,7 +212,7 @@ namespace Trabajo14
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point(205, 86);
+			this.label5.Location = new System.Drawing.Point(205, 201);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(105, 22);
 			this.label5.TabIndex = 16;
@@ -210,7 +220,7 @@ namespace Trabajo14
 			// 
 			// label6
 			// 
-			this.label6.Location = new System.Drawing.Point(12, 86);
+			this.label6.Location = new System.Drawing.Point(12, 201);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(91, 22);
 			this.label6.TabIndex = 17;
@@ -218,74 +228,137 @@ namespace Trabajo14
 			// 
 			// label7
 			// 
-			this.label7.Location = new System.Drawing.Point(108, 86);
+			this.label7.Location = new System.Drawing.Point(109, 201);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(96, 22);
 			this.label7.TabIndex = 18;
 			this.label7.Text = "Cantidad: ";
 			// 
-			// textBox6
+			// txtPrecio
 			// 
-			this.textBox6.Location = new System.Drawing.Point(12, 111);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(91, 27);
-			this.textBox6.TabIndex = 19;
+			this.txtPrecio.Location = new System.Drawing.Point(12, 240);
+			this.txtPrecio.Name = "txtPrecio";
+			this.txtPrecio.Size = new System.Drawing.Size(91, 27);
+			this.txtPrecio.TabIndex = 19;
 			// 
-			// textBox7
+			// txtCantidad
 			// 
-			this.textBox7.Location = new System.Drawing.Point(108, 111);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(91, 27);
-			this.textBox7.TabIndex = 20;
+			this.txtCantidad.Location = new System.Drawing.Point(108, 240);
+			this.txtCantidad.Name = "txtCantidad";
+			this.txtCantidad.Size = new System.Drawing.Size(91, 27);
+			this.txtCantidad.TabIndex = 20;
 			// 
-			// textBox8
+			// txtTotal
 			// 
-			this.textBox8.Location = new System.Drawing.Point(205, 111);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(91, 27);
-			this.textBox8.TabIndex = 21;
+			this.txtTotal.Location = new System.Drawing.Point(205, 240);
+			this.txtTotal.Name = "txtTotal";
+			this.txtTotal.Size = new System.Drawing.Size(91, 27);
+			this.txtTotal.TabIndex = 21;
 			// 
 			// label8
 			// 
-			this.label8.Location = new System.Drawing.Point(12, 58);
+			this.label8.Location = new System.Drawing.Point(11, 169);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(193, 22);
 			this.label8.TabIndex = 22;
 			this.label8.Text = "Seleccionar Producto:";
 			// 
-			// listBox1
+			// pictureBox1
 			// 
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.ItemHeight = 21;
-			this.listBox1.Location = new System.Drawing.Point(205, 58);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(109, 25);
-			this.listBox1.TabIndex = 23;
+			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(800, 150);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 24;
+			this.pictureBox1.TabStop = false;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(710, 155);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(85, 85);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 25;
+			this.pictureBox2.TabStop = false;
+			this.pictureBox2.Click += new System.EventHandler(this.PictureBox2Click);
+			// 
+			// cmbProductos
+			// 
+			this.cmbProductos.FormattingEnabled = true;
+			this.cmbProductos.Location = new System.Drawing.Point(191, 166);
+			this.cmbProductos.Name = "cmbProductos";
+			this.cmbProductos.Size = new System.Drawing.Size(148, 29);
+			this.cmbProductos.TabIndex = 26;
+			// 
+			// btnSalir
+			// 
+			this.btnSalir.BackColor = System.Drawing.Color.White;
+			this.btnSalir.ForeColor = System.Drawing.Color.Black;
+			this.btnSalir.Location = new System.Drawing.Point(12, 549);
+			this.btnSalir.Name = "btnSalir";
+			this.btnSalir.Size = new System.Drawing.Size(114, 38);
+			this.btnSalir.TabIndex = 27;
+			this.btnSalir.Text = "Imprimir";
+			this.btnSalir.UseVisualStyleBackColor = false;
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+			this.pictureBox3.Location = new System.Drawing.Point(771, 0);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(27, 24);
+			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox3.TabIndex = 28;
+			this.pictureBox3.TabStop = false;
+			this.pictureBox3.Click += new System.EventHandler(this.PictureBox3Click);
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+			this.pictureBox4.Location = new System.Drawing.Point(745, 0);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(29, 24);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox4.TabIndex = 29;
+			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.PictureBox4Click);
 			// 
 			// Pasteleria
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-			this.ClientSize = new System.Drawing.Size(723, 482);
-			this.Controls.Add(this.listBox1);
+			this.BackColor = System.Drawing.Color.Teal;
+			this.ClientSize = new System.Drawing.Size(800, 749);
+			this.Controls.Add(this.pictureBox4);
+			this.Controls.Add(this.pictureBox3);
+			this.Controls.Add(this.btnSalir);
+			this.Controls.Add(this.cmbProductos);
+			this.Controls.Add(this.pictureBox2);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.label8);
-			this.Controls.Add(this.textBox8);
-			this.Controls.Add(this.textBox7);
-			this.Controls.Add(this.textBox6);
+			this.Controls.Add(this.txtTotal);
+			this.Controls.Add(this.txtCantidad);
+			this.Controls.Add(this.txtPrecio);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox5);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.btnImprimir);
+			this.Controls.Add(this.btnBorrar);
+			this.Controls.Add(this.btnGuardar);
+			this.Controls.Add(this.txtCambio);
+			this.Controls.Add(this.ImportePagado);
+			this.Controls.Add(this.ImporteNeto);
+			this.Controls.Add(this.txtDescuento);
+			this.Controls.Add(this.txtSubtotal);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
@@ -300,27 +373,36 @@ namespace Trabajo14
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Pasteleria";
 			this.Load += new System.EventHandler(this.PasteleriaLoad);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
-		private System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.PictureBox pictureBox4;
+		private System.Windows.Forms.PictureBox pictureBox3;
+		private System.Windows.Forms.Button btnSalir;
+		private System.Windows.Forms.ComboBox cmbProductos;
+		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TextBox txtTotal;
+		private System.Windows.Forms.TextBox txtCantidad;
+		private System.Windows.Forms.TextBox txtPrecio;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.Button btnImprimir;
+		private System.Windows.Forms.Button btnBorrar;
+		private System.Windows.Forms.Button btnGuardar;
+		private System.Windows.Forms.TextBox txtCambio;
+		private System.Windows.Forms.TextBox ImportePagado;
+		private System.Windows.Forms.TextBox ImporteNeto;
+		private System.Windows.Forms.TextBox txtDescuento;
+		private System.Windows.Forms.TextBox txtSubtotal;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;

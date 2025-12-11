@@ -47,6 +47,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="acercade.cs" />
+    <Compile Include="acercade.Designer.cs">
+      <DependentUpon>acercade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Boleta.cs" />
     <Compile Include="Boleta.Designer.cs">
       <DependentUpon>Boleta.cs</DependentUpon>
@@ -71,6 +75,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="acercade.resx">
+      <DependentUpon>acercade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Boleta.resx">
       <DependentUpon>Boleta.cs</DependentUpon>
     </EmbeddedResource>

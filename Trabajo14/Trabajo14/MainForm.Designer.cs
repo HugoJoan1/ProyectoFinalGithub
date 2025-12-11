@@ -175,7 +175,6 @@ namespace Trabajo14
 			this.ForeColor = System.Drawing.Color.DimGray;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "MainForm";
-			this.Opacity = 0.85D;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Trabajo14";
 			this.panel1.ResumeLayout(false);

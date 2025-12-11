@@ -37,7 +37,7 @@ namespace Trabajo14
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boleta));
-			this.listView1 = new System.Windows.Forms.ListView();
+			this.lvCali = new System.Windows.Forms.ListView();
 			this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
@@ -47,8 +47,8 @@ namespace Trabajo14
 			this.btnSalir = new System.Windows.Forms.Button();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnRegistrar = new System.Windows.Forms.Button();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.label8 = new System.Windows.Forms.Label();
+			this.cboMateria = new System.Windows.Forms.ComboBox();
+			this.lblFecha = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.cboEspecialidad = new System.Windows.Forms.ComboBox();
@@ -66,25 +66,27 @@ namespace Trabajo14
 			this.lbltitulo = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.lblGeneral = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// listView1
+			// lvCali
 			// 
-			this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+			this.lvCali.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
 									this.columnHeader1,
 									this.columnHeader2,
 									this.columnHeader3,
 									this.columnHeader4,
 									this.columnHeader5,
 									this.columnHeader6});
-			this.listView1.Location = new System.Drawing.Point(12, 304);
-			this.listView1.Name = "listView1";
-			this.listView1.Size = new System.Drawing.Size(560, 133);
-			this.listView1.TabIndex = 41;
-			this.listView1.UseCompatibleStateImageBehavior = false;
-			this.listView1.View = System.Windows.Forms.View.Details;
+			this.lvCali.Location = new System.Drawing.Point(12, 304);
+			this.lvCali.Name = "lvCali";
+			this.lvCali.Size = new System.Drawing.Size(560, 133);
+			this.lvCali.TabIndex = 41;
+			this.lvCali.UseCompatibleStateImageBehavior = false;
+			this.lvCali.View = System.Windows.Forms.View.Details;
 			// 
 			// columnHeader1
 			// 
@@ -148,10 +150,10 @@ namespace Trabajo14
 			this.btnRegistrar.UseVisualStyleBackColor = false;
 			this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrarClick);
 			// 
-			// comboBox1
+			// cboMateria
 			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.cboMateria.FormattingEnabled = true;
+			this.cboMateria.Items.AddRange(new object[] {
 									"Ingles",
 									"Matematicas",
 									"Ecosistemas (Biologia)",
@@ -159,18 +161,18 @@ namespace Trabajo14
 									"Metodologias agiles",
 									"Humanidades",
 									"Lengua y Comunicación"});
-			this.comboBox1.Location = new System.Drawing.Point(46, 217);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(143, 21);
-			this.comboBox1.TabIndex = 35;
+			this.cboMateria.Location = new System.Drawing.Point(46, 217);
+			this.cboMateria.Name = "cboMateria";
+			this.cboMateria.Size = new System.Drawing.Size(143, 21);
+			this.cboMateria.TabIndex = 35;
 			// 
-			// label8
+			// lblFecha
 			// 
-			this.label8.BackColor = System.Drawing.Color.White;
-			this.label8.Location = new System.Drawing.Point(333, 217);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(69, 21);
-			this.label8.TabIndex = 37;
+			this.lblFecha.BackColor = System.Drawing.Color.White;
+			this.lblFecha.Location = new System.Drawing.Point(333, 217);
+			this.lblFecha.Name = "lblFecha";
+			this.lblFecha.Size = new System.Drawing.Size(69, 21);
+			this.lblFecha.TabIndex = 37;
 			// 
 			// label7
 			// 
@@ -324,20 +326,40 @@ namespace Trabajo14
 			this.pictureBox2.TabStop = false;
 			this.pictureBox2.Click += new System.EventHandler(this.PictureBox2Click);
 			// 
+			// label8
+			// 
+			this.label8.Location = new System.Drawing.Point(353, 451);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(107, 18);
+			this.label8.TabIndex = 44;
+			this.label8.Text = "Calificacion General:";
+			// 
+			// lblGeneral
+			// 
+			this.lblGeneral.Location = new System.Drawing.Point(463, 446);
+			this.lblGeneral.Name = "lblGeneral";
+			this.lblGeneral.Size = new System.Drawing.Size(100, 23);
+			this.lblGeneral.TabIndex = 45;
+			this.lblGeneral.Text = " [texto]";
+			this.lblGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblGeneral.Click += new System.EventHandler(this.LblGeneralClick);
+			// 
 			// Boleta
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-			this.ClientSize = new System.Drawing.Size(584, 461);
+			this.ClientSize = new System.Drawing.Size(584, 478);
+			this.Controls.Add(this.lblGeneral);
+			this.Controls.Add(this.label8);
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.pictureBox1);
-			this.Controls.Add(this.listView1);
+			this.Controls.Add(this.lvCali);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnRegistrar);
-			this.Controls.Add(this.comboBox1);
-			this.Controls.Add(this.label8);
+			this.Controls.Add(this.cboMateria);
+			this.Controls.Add(this.lblFecha);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.cboEspecialidad);
@@ -356,6 +378,7 @@ namespace Trabajo14
 			this.ForeColor = System.Drawing.Color.White;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Boleta";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Boleta";
 			this.Load += new System.EventHandler(this.BoletaLoad);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -363,6 +386,8 @@ namespace Trabajo14
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label lblGeneral;
+		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label lbltitulo;
@@ -380,8 +405,8 @@ namespace Trabajo14
 		private System.Windows.Forms.ComboBox cboEspecialidad;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.Label lblFecha;
+		private System.Windows.Forms.ComboBox cboMateria;
 		private System.Windows.Forms.Button btnRegistrar;
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.Button btnSalir;
@@ -391,6 +416,6 @@ namespace Trabajo14
 		private System.Windows.Forms.ColumnHeader columnHeader3;
 		private System.Windows.Forms.ColumnHeader columnHeader2;
 		private System.Windows.Forms.ColumnHeader columnHeader1;
-		private System.Windows.Forms.ListView listView1;
+		private System.Windows.Forms.ListView lvCali;
 	}
 }
