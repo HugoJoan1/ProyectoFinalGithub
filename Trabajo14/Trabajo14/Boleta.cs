@@ -30,7 +30,7 @@ namespace Trabajo14
 			//
 		}
 		
-		int i;
+		int i = 1;
 		double General = 0;
 		
 		void PictureBox2Click(object sender, EventArgs e)

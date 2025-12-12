@@ -169,7 +169,7 @@ namespace Trabajo14
 			// lblFecha
 			// 
 			this.lblFecha.BackColor = System.Drawing.Color.White;
-			this.lblFecha.Location = new System.Drawing.Point(333, 217);
+			this.lblFecha.Location = new System.Drawing.Point(346, 214);
 			this.lblFecha.Name = "lblFecha";
 			this.lblFecha.Size = new System.Drawing.Size(69, 21);
 			this.lblFecha.TabIndex = 37;
