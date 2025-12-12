@@ -268,7 +268,7 @@ namespace Trabajo14
 			this.cuadradoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.cuadradoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cuadradoToolStripMenuItem.Image")));
 			this.cuadradoToolStripMenuItem.Name = "cuadradoToolStripMenuItem";
-			this.cuadradoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.cuadradoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
 			this.cuadradoToolStripMenuItem.Text = "Cuadrado";
 			this.cuadradoToolStripMenuItem.Click += new System.EventHandler(this.CuadradoToolStripMenuItemClick);
 			// 
@@ -278,7 +278,7 @@ namespace Trabajo14
 			this.rectánguloToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.rectánguloToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rectánguloToolStripMenuItem.Image")));
 			this.rectánguloToolStripMenuItem.Name = "rectánguloToolStripMenuItem";
-			this.rectánguloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.rectánguloToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
 			this.rectánguloToolStripMenuItem.Text = "Rectángulo";
 			this.rectánguloToolStripMenuItem.Click += new System.EventHandler(this.RectánguloToolStripMenuItemClick);
 			// 
@@ -288,7 +288,7 @@ namespace Trabajo14
 			this.triánguloToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.triánguloToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("triánguloToolStripMenuItem.Image")));
 			this.triánguloToolStripMenuItem.Name = "triánguloToolStripMenuItem";
-			this.triánguloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.triánguloToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
 			this.triánguloToolStripMenuItem.Text = "Triángulo";
 			this.triánguloToolStripMenuItem.Click += new System.EventHandler(this.TriánguloToolStripMenuItemClick);
 			// 
@@ -308,7 +308,7 @@ namespace Trabajo14
 			this.circunferenciaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.circunferenciaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("circunferenciaToolStripMenuItem.Image")));
 			this.circunferenciaToolStripMenuItem.Name = "circunferenciaToolStripMenuItem";
-			this.circunferenciaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.circunferenciaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.circunferenciaToolStripMenuItem.Text = "Circuncisión";
 			this.circunferenciaToolStripMenuItem.Click += new System.EventHandler(this.CircunferenciaToolStripMenuItemClick);
 			// 
@@ -318,7 +318,7 @@ namespace Trabajo14
 			this.trapecioToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.trapecioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("trapecioToolStripMenuItem.Image")));
 			this.trapecioToolStripMenuItem.Name = "trapecioToolStripMenuItem";
-			this.trapecioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.trapecioToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.trapecioToolStripMenuItem.Text = "Trapecio";
 			this.trapecioToolStripMenuItem.Click += new System.EventHandler(this.TrapecioToolStripMenuItemClick);
 			// 
@@ -339,7 +339,7 @@ namespace Trabajo14
 			this.esferaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.esferaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("esferaToolStripMenuItem.Image")));
 			this.esferaToolStripMenuItem.Name = "esferaToolStripMenuItem";
-			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
 			this.esferaToolStripMenuItem.Text = "Esfera";
 			this.esferaToolStripMenuItem.Click += new System.EventHandler(this.EsferaToolStripMenuItemClick);
 			// 
@@ -349,7 +349,7 @@ namespace Trabajo14
 			this.cuboToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.cuboToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cuboToolStripMenuItem.Image")));
 			this.cuboToolStripMenuItem.Name = "cuboToolStripMenuItem";
-			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
 			this.cuboToolStripMenuItem.Text = "Cubo";
 			this.cuboToolStripMenuItem.Click += new System.EventHandler(this.CuboToolStripMenuItemClick);
 			// 
@@ -359,7 +359,7 @@ namespace Trabajo14
 			this.piramideToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.piramideToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("piramideToolStripMenuItem.Image")));
 			this.piramideToolStripMenuItem.Name = "piramideToolStripMenuItem";
-			this.piramideToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.piramideToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
 			this.piramideToolStripMenuItem.Text = "Pirámide";
 			this.piramideToolStripMenuItem.Click += new System.EventHandler(this.PiramideToolStripMenuItemClick);
 			// 
@@ -396,7 +396,7 @@ namespace Trabajo14
 			this.empleadoToolStripMenuItem1.BackColor = System.Drawing.Color.Black;
 			this.empleadoToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
 			this.empleadoToolStripMenuItem1.Name = "empleadoToolStripMenuItem1";
-			this.empleadoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+			this.empleadoToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
 			this.empleadoToolStripMenuItem1.Text = "E&mpleado";
 			this.empleadoToolStripMenuItem1.Click += new System.EventHandler(this.EmpleadoToolStripMenuItem1Click);
 			// 
@@ -432,7 +432,7 @@ namespace Trabajo14
 			this.autoresToolStripMenuItem.BackColor = System.Drawing.Color.Black;
 			this.autoresToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.autoresToolStripMenuItem.Name = "autoresToolStripMenuItem";
-			this.autoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.autoresToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.autoresToolStripMenuItem.Text = "A&utores";
 			this.autoresToolStripMenuItem.Click += new System.EventHandler(this.AutoresToolStripMenuItemClick);
 			// 
@@ -462,10 +462,10 @@ namespace Trabajo14
 			// 
 			this.lblAdvv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
 			this.lblAdvv.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblAdvv.ForeColor = System.Drawing.Color.White;
+			this.lblAdvv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
 			this.lblAdvv.Location = new System.Drawing.Point(471, 179);
 			this.lblAdvv.Name = "lblAdvv";
-			this.lblAdvv.Size = new System.Drawing.Size(129, 108);
+			this.lblAdvv.Size = new System.Drawing.Size(129, 73);
 			this.lblAdvv.TabIndex = 27;
 			this.lblAdvv.Text = "Tambien funciona con masas, temperaturas y etc..";
 			// 
@@ -473,10 +473,10 @@ namespace Trabajo14
 			// 
 			this.lblAdv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
 			this.lblAdv.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblAdv.ForeColor = System.Drawing.Color.White;
+			this.lblAdv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.lblAdv.Location = new System.Drawing.Point(471, 56);
 			this.lblAdv.Name = "lblAdv";
-			this.lblAdv.Size = new System.Drawing.Size(129, 108);
+			this.lblAdv.Size = new System.Drawing.Size(129, 72);
 			this.lblAdv.TabIndex = 26;
 			this.lblAdv.Text = "Aviso: primero escriba las unidades y despues selecciona la opcion que desee";
 			// 
@@ -518,7 +518,7 @@ namespace Trabajo14
 			this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox3.ForeColor = System.Drawing.Color.White;
-			this.textBox3.Location = new System.Drawing.Point(330, 179);
+			this.textBox3.Location = new System.Drawing.Point(330, 188);
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(100, 14);
 			this.textBox3.TabIndex = 22;
@@ -566,7 +566,7 @@ namespace Trabajo14
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(178, 59);
 			this.label1.TabIndex = 18;
-			this.label1.Text = "Aqui escribe si tiene profundidad, como cubo o esfera.";
+			this.label1.Text = "Escribe la unidad C del trapecio";
 			// 
 			// textBox1
 			// 

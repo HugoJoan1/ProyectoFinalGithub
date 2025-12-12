@@ -340,7 +340,7 @@ namespace Trabajo14
 			this.lblGeneral.Name = "lblGeneral";
 			this.lblGeneral.Size = new System.Drawing.Size(100, 23);
 			this.lblGeneral.TabIndex = 45;
-			this.lblGeneral.Text = " [texto]";
+			this.lblGeneral.Text = " ";
 			this.lblGeneral.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.lblGeneral.Click += new System.EventHandler(this.LblGeneralClick);
 			// 
