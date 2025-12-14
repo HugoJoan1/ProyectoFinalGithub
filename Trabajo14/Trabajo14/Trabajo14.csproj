@@ -55,6 +55,7 @@
     <Compile Include="Boleta.Designer.cs">
       <DependentUpon>Boleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="clsLista.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="Empleado.Designer.cs">
       <DependentUpon>Empleado.cs</DependentUpon>
@@ -73,6 +74,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yuppie.cs" />
+    <Compile Include="yuppie.Designer.cs">
+      <DependentUpon>yuppie.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="acercade.resx">
@@ -80,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Boleta.resx">
       <DependentUpon>Boleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -89,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pasteleria.resx">
       <DependentUpon>Pasteleria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yuppie.resx">
+      <DependentUpon>yuppie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
