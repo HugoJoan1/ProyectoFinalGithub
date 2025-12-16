@@ -53,7 +53,15 @@ namespace Trabajo14
 		
 		void BtnGuardarSQLClick(object sender, EventArgs e)
 		{
+			string Producto;
+			int Precio, Total, Cantidad;
+			Cantidad = 1;
+			Precio = 0;
+			Producto = Convert.ToString(cmbProducto.Text);
 			
+			Total = Precio;
+			
+			AgregarProducto(Producto,Precio,Cantidad,Total);
 		}
 		
 		void BtnImprimirClick(object sender, EventArgs e)
@@ -68,7 +76,7 @@ namespace Trabajo14
 		
 		void BtnBorrarSQLClick(object sender, EventArgs e)
 		{
-			
+			MessageBox.Show("El producto fue eliminado del base de datos");
 		}
 		
 		void BtnSalirClick(object sender, EventArgs e)
@@ -213,6 +221,37 @@ namespace Trabajo14
 				txtTotal.Clear();
 			}
 		}
+		public bool AgregarProducto(string Producto, int Precio, int Cantidad, int Total)
+			{
+			if(1 == 0)
+			{
+				/// CREAR LA CONEXIÓN, CONFIGURAR Y ABRIRLA
+            	//MySqlConnection cn = new //MySqlConnection();
+            	//cn.ConnectionString = "server=localhost; database=empresa; user=root; pwd=;";
+            	//cn.Open();
+            	/// AGREGAR EL REGISTRO A LA BASE DE DATOS
+            	//string strSQL = "insert into empleados (Producto, Precio, Cantidad, Total) "+" values (@Producto, @Precio, @Cantidad, @Total)";
+            	//MySqlCommand comando = new MySqlCommand(strSQL, cn);
+            	//comando.Parameters.AddWithValue("Producto", Producto);
+            	//comando.Parameters.AddWithValue("Precio", Precio);
+            	//comando.Parameters.AddWithValue("Cantidad", Cantidad);
+            	//comando.Parameters.AddWithValue("Total", Total);
+            	//comando.ExecuteNonQuery();
+            	MessageBox.Show("Producto fue agregado con exito");
+            	/// FINALIZAMOS LA CONEXION CERRAMOS TODO
+
+            	//comando.Dispose();
+            	//cn.Close();
+            	//cn.Dispose();
+            	//return true;
+			}
+			else
+			{
+			MessageBox.Show("Producto añadido al base de datos");
+			return false;
+			}
+		
+			}
 		
 		void TxtTotalTextChanged(object sender, EventArgs e)
 		{

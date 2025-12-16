@@ -160,9 +160,9 @@ namespace Trabajo14
 			this.btnGuardarSQL.ForeColor = System.Drawing.Color.Black;
 			this.btnGuardarSQL.Location = new System.Drawing.Point(10, 573);
 			this.btnGuardarSQL.Name = "btnGuardarSQL";
-			this.btnGuardarSQL.Size = new System.Drawing.Size(114, 38);
+			this.btnGuardarSQL.Size = new System.Drawing.Size(114, 112);
 			this.btnGuardarSQL.TabIndex = 11;
-			this.btnGuardarSQL.Text = "Guardar";
+			this.btnGuardarSQL.Text = "Guardar producto a base de datos";
 			this.btnGuardarSQL.UseVisualStyleBackColor = false;
 			this.btnGuardarSQL.Click += new System.EventHandler(this.BtnGuardarSQLClick);
 			// 
@@ -172,9 +172,9 @@ namespace Trabajo14
 			this.btnBorrarSQL.ForeColor = System.Drawing.Color.Black;
 			this.btnBorrarSQL.Location = new System.Drawing.Point(129, 573);
 			this.btnBorrarSQL.Name = "btnBorrarSQL";
-			this.btnBorrarSQL.Size = new System.Drawing.Size(114, 38);
+			this.btnBorrarSQL.Size = new System.Drawing.Size(114, 112);
 			this.btnBorrarSQL.TabIndex = 12;
-			this.btnBorrarSQL.Text = "Borrar";
+			this.btnBorrarSQL.Text = "Borrar producto de base de datos";
 			this.btnBorrarSQL.UseVisualStyleBackColor = false;
 			this.btnBorrarSQL.Click += new System.EventHandler(this.BtnBorrarSQLClick);
 			// 
