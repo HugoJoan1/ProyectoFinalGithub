@@ -71,6 +71,8 @@ namespace Trabajo14
 			this.dgvDatos = new System.Windows.Forms.DataGridView();
 			this.txtRutaArchivo = new System.Windows.Forms.TextBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.btnAgregar = new System.Windows.Forms.Button();
+			this.button3 = new System.Windows.Forms.Button();
 			this.gpbEstado.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
 			this.panel1.SuspendLayout();
@@ -83,7 +85,7 @@ namespace Trabajo14
 			// lblSa
 			// 
 			this.lblSa.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblSa.Location = new System.Drawing.Point(23, 278);
+			this.lblSa.Location = new System.Drawing.Point(80, 278);
 			this.lblSa.Name = "lblSa";
 			this.lblSa.Size = new System.Drawing.Size(224, 23);
 			this.lblSa.TabIndex = 66;
@@ -104,7 +106,7 @@ namespace Trabajo14
 			// btnLimpiar
 			// 
 			this.btnLimpiar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnLimpiar.Location = new System.Drawing.Point(506, 602);
+			this.btnLimpiar.Location = new System.Drawing.Point(429, 602);
 			this.btnLimpiar.Name = "btnLimpiar";
 			this.btnLimpiar.Size = new System.Drawing.Size(129, 36);
 			this.btnLimpiar.TabIndex = 63;
@@ -152,7 +154,7 @@ namespace Trabajo14
 			this.cmbSexo.Items.AddRange(new object[] {
 									"Hombre",
 									"Mujer"});
-			this.cmbSexo.Location = new System.Drawing.Point(99, 203);
+			this.cmbSexo.Location = new System.Drawing.Point(115, 202);
 			this.cmbSexo.Name = "cmbSexo";
 			this.cmbSexo.Size = new System.Drawing.Size(144, 21);
 			this.cmbSexo.TabIndex = 56;
@@ -169,7 +171,7 @@ namespace Trabajo14
 			// dtpFecha
 			// 
 			this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpFecha.Location = new System.Drawing.Point(201, 148);
+			this.dtpFecha.Location = new System.Drawing.Point(222, 145);
 			this.dtpFecha.Name = "dtpFecha";
 			this.dtpFecha.Size = new System.Drawing.Size(98, 20);
 			this.dtpFecha.TabIndex = 54;
@@ -178,7 +180,7 @@ namespace Trabajo14
 			// label4
 			// 
 			this.label4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(30, 145);
+			this.label4.Location = new System.Drawing.Point(32, 147);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(197, 23);
 			this.label4.TabIndex = 53;
@@ -193,7 +195,7 @@ namespace Trabajo14
 									"Gerente",
 									"Ingeniero",
 									"Conserje"});
-			this.cmbPuesto.Location = new System.Drawing.Point(99, 176);
+			this.cmbPuesto.Location = new System.Drawing.Point(115, 178);
 			this.cmbPuesto.Name = "cmbPuesto";
 			this.cmbPuesto.Size = new System.Drawing.Size(144, 21);
 			this.cmbPuesto.TabIndex = 52;
@@ -210,9 +212,9 @@ namespace Trabajo14
 			// txtNombre
 			// 
 			this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtNombre.Location = new System.Drawing.Point(213, 88);
+			this.txtNombre.Location = new System.Drawing.Point(222, 88);
 			this.txtNombre.Name = "txtNombre";
-			this.txtNombre.Size = new System.Drawing.Size(422, 20);
+			this.txtNombre.Size = new System.Drawing.Size(542, 20);
 			this.txtNombre.TabIndex = 50;
 			// 
 			// label2
@@ -227,9 +229,9 @@ namespace Trabajo14
 			// txtCodigo
 			// 
 			this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtCodigo.Location = new System.Drawing.Point(213, 117);
+			this.txtCodigo.Location = new System.Drawing.Point(222, 118);
 			this.txtCodigo.Name = "txtCodigo";
-			this.txtCodigo.Size = new System.Drawing.Size(422, 20);
+			this.txtCodigo.Size = new System.Drawing.Size(542, 20);
 			this.txtCodigo.TabIndex = 47;
 			// 
 			// LBLE
@@ -244,7 +246,7 @@ namespace Trabajo14
 			// btnEliminar
 			// 
 			this.btnEliminar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnEliminar.Location = new System.Drawing.Point(276, 602);
+			this.btnEliminar.Location = new System.Drawing.Point(241, 602);
 			this.btnEliminar.Name = "btnEliminar";
 			this.btnEliminar.Size = new System.Drawing.Size(129, 36);
 			this.btnEliminar.TabIndex = 62;
@@ -255,7 +257,7 @@ namespace Trabajo14
 			// btnGuardar
 			// 
 			this.btnGuardar.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnGuardar.Location = new System.Drawing.Point(30, 602);
+			this.btnGuardar.Location = new System.Drawing.Point(32, 602);
 			this.btnGuardar.Name = "btnGuardar";
 			this.btnGuardar.Size = new System.Drawing.Size(132, 36);
 			this.btnGuardar.TabIndex = 48;
@@ -266,7 +268,7 @@ namespace Trabajo14
 			// btnQuitar
 			// 
 			this.btnQuitar.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnQuitar.Location = new System.Drawing.Point(32, 360);
+			this.btnQuitar.Location = new System.Drawing.Point(67, 360);
 			this.btnQuitar.Name = "btnQuitar";
 			this.btnQuitar.Size = new System.Drawing.Size(162, 24);
 			this.btnQuitar.TabIndex = 61;
@@ -286,7 +288,7 @@ namespace Trabajo14
 			// btnActualizar
 			// 
 			this.btnActualizar.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnActualizar.Location = new System.Drawing.Point(32, 330);
+			this.btnActualizar.Location = new System.Drawing.Point(67, 330);
 			this.btnActualizar.Name = "btnActualizar";
 			this.btnActualizar.Size = new System.Drawing.Size(162, 24);
 			this.btnActualizar.TabIndex = 60;
@@ -298,9 +300,9 @@ namespace Trabajo14
 			// 
 			this.picImagen.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.picImagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.picImagen.Location = new System.Drawing.Point(310, 159);
+			this.picImagen.Location = new System.Drawing.Point(363, 147);
 			this.picImagen.Name = "picImagen";
-			this.picImagen.Size = new System.Drawing.Size(325, 240);
+			this.picImagen.Size = new System.Drawing.Size(387, 252);
 			this.picImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.picImagen.TabIndex = 59;
 			this.picImagen.TabStop = false;
@@ -312,7 +314,7 @@ namespace Trabajo14
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Location = new System.Drawing.Point(-15, 26);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(710, 49);
+			this.panel1.Size = new System.Drawing.Size(784, 49);
 			this.panel1.TabIndex = 45;
 			// 
 			// menuStrip1
@@ -322,7 +324,7 @@ namespace Trabajo14
 									this.archivoToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(679, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(781, 24);
 			this.menuStrip1.TabIndex = 64;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -371,12 +373,12 @@ namespace Trabajo14
 			this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvDatos.Location = new System.Drawing.Point(12, 405);
 			this.dgvDatos.Name = "dgvDatos";
-			this.dgvDatos.Size = new System.Drawing.Size(655, 191);
+			this.dgvDatos.Size = new System.Drawing.Size(622, 191);
 			this.dgvDatos.TabIndex = 58;
 			// 
 			// txtRutaArchivo
 			// 
-			this.txtRutaArchivo.Location = new System.Drawing.Point(23, 304);
+			this.txtRutaArchivo.Location = new System.Drawing.Point(56, 304);
 			this.txtRutaArchivo.Name = "txtRutaArchivo";
 			this.txtRutaArchivo.Size = new System.Drawing.Size(264, 20);
 			this.txtRutaArchivo.TabIndex = 67;
@@ -385,7 +387,7 @@ namespace Trabajo14
 			// 
 			this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(222, 330);
+			this.pictureBox1.Location = new System.Drawing.Point(255, 330);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(65, 54);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -393,12 +395,36 @@ namespace Trabajo14
 			this.pictureBox1.TabStop = false;
 			this.pictureBox1.Click += new System.EventHandler(this.PictureBox1Click);
 			// 
+			// btnAgregar
+			// 
+			this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAgregar.Location = new System.Drawing.Point(640, 416);
+			this.btnAgregar.Name = "btnAgregar";
+			this.btnAgregar.Size = new System.Drawing.Size(124, 83);
+			this.btnAgregar.TabIndex = 69;
+			this.btnAgregar.Text = "AGREGAR A BASE DE DATOS";
+			this.btnAgregar.UseVisualStyleBackColor = true;
+			this.btnAgregar.Click += new System.EventHandler(this.BtnAgregarClick);
+			// 
+			// button3
+			// 
+			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button3.Location = new System.Drawing.Point(640, 517);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(124, 79);
+			this.button3.TabIndex = 70;
+			this.button3.Text = "ELIMINAR DE BASE DE DATOS";
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.Button3Click);
+			// 
 			// Empleado
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-			this.ClientSize = new System.Drawing.Size(679, 650);
+			this.ClientSize = new System.Drawing.Size(781, 650);
+			this.Controls.Add(this.button3);
+			this.Controls.Add(this.btnAgregar);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.lblSa);
 			this.Controls.Add(this.button1);
@@ -439,6 +465,8 @@ namespace Trabajo14
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button btnAgregar;
 		private System.Windows.Forms.ToolStripMenuItem cerrarLaApplicacionToolStripMenuItem;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.TextBox txtRutaArchivo;

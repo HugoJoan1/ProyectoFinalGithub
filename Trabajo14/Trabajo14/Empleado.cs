@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
+using MySql.Data.MySqlClient;
 
 namespace Trabajo14
 {
@@ -288,5 +289,61 @@ public partial class Empleado : Form
 		{
 			Application.Exit();
 		}
+		
+		void BtnAgregarClick(object sender, EventArgs e)
+		{
+			int Codigo;
+			string Nombre, Puesto, Sexo, Estado;
+			Codigo = Convert.ToInt32(txtCodigo.Text);
+			Nombre = Convert.ToString(txtNombre.Text);
+			Puesto = Convert.ToString(cmbPuesto.Text);
+			Sexo = Convert.ToString(cmbSexo.Text);
+			if(rbnContrato.Checked)
+			{
+			
+				Estado = "Contrato";
+			
+			}
+			else
+			{
+			
+				Estado = "Regular";
+			
+			}
+			AgregarEmpleado(Codigo,Nombre,Puesto,Sexo,Estado);
+
+        }
+			public bool AgregarEmpleado(int Codigo, string Nombre, string Puesto, string Sexo, string Estado)
+			{
+				/// CREAR LA CONEXIÓN, CONFIGURAR Y ABRIRLA
+            	MySqlConnection cn = new MySqlConnection();
+            	cn.ConnectionString = "server=localhost; database=empresa; user=root; pwd=;";
+            	cn.Open();
+            	/// AGREGAR EL REGISTRO A LA BASE DE DATOS
+            	string strSQL = "insert into empleados (Codigo, Nombre, Puesto, Sexo, Estado) "+" values (@Clave, @Nombre, @Puesto, @Sexo, @Estado)";
+            	MySqlCommand comando = new MySqlCommand(strSQL, cn);
+            	comando.Parameters.AddWithValue("Clave", Codigo);
+            	comando.Parameters.AddWithValue("Nombre", Nombre);
+            	comando.Parameters.AddWithValue("Puesto", Puesto);
+            	comando.Parameters.AddWithValue("Sexo", Sexo);
+            	comando.Parameters.AddWithValue("Estado", Estado);
+            	comando.ExecuteNonQuery();
+            	MessageBox.Show("Empleado fue agregado con exito");
+            	/// FINALIZAMOS LA CONEXION CERRAMOS TODO
+
+            	comando.Dispose();
+            	cn.Close();
+            	cn.Dispose();
+            	return true;
+		
+		
+			}
+		
+		void Button3Click(object sender, EventArgs e)
+		{
+			
+			
+		}
+		}
 	}
-}
+
