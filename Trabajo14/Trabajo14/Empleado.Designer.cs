@@ -73,6 +73,7 @@ namespace Trabajo14
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnAgregar = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
+			this.label6 = new System.Windows.Forms.Label();
 			this.gpbEstado.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
 			this.panel1.SuspendLayout();
@@ -95,7 +96,7 @@ namespace Trabajo14
 			// 
 			this.button1.BackColor = System.Drawing.Color.Red;
 			this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.Location = new System.Drawing.Point(647, 3);
+			this.button1.Location = new System.Drawing.Point(749, 0);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(32, 21);
 			this.button1.TabIndex = 65;
@@ -417,12 +418,23 @@ namespace Trabajo14
 			this.button3.UseVisualStyleBackColor = true;
 			this.button3.Click += new System.EventHandler(this.Button3Click);
 			// 
+			// label6
+			// 
+			this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+			this.label6.Location = new System.Drawing.Point(592, 599);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(189, 45);
+			this.label6.TabIndex = 71;
+			this.label6.Text = "Ponga los datos correspondientes del empleado que desee eliminar en el formulario" +
+			".";
+			// 
 			// Empleado
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
 			this.ClientSize = new System.Drawing.Size(781, 650);
+			this.Controls.Add(this.label6);
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.btnAgregar);
 			this.Controls.Add(this.pictureBox1);
@@ -465,6 +477,7 @@ namespace Trabajo14
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button btnAgregar;
 		private System.Windows.Forms.ToolStripMenuItem cerrarLaApplicacionToolStripMenuItem;
