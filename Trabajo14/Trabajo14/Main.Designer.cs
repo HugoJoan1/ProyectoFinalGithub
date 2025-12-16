@@ -100,8 +100,8 @@ namespace Trabajo14
 									this.areaToolStripMenuItem,
 									this.perimetroToolStripMenuItem,
 									this.volumenToolStripMenuItem,
-									this.pasteleríaToolStripMenuItem,
 									this.empleadoToolStripMenuItem,
+									this.pasteleríaToolStripMenuItem,
 									this.calificacionesToolStripMenuItem,
 									this.acercaDeToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -150,7 +150,7 @@ namespace Trabajo14
 									this.kilometrosAMillasToolStripMenuItem});
 			this.longitudToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.longitudToolStripMenuItem.Name = "longitudToolStripMenuItem";
-			this.longitudToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.longitudToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
 			this.longitudToolStripMenuItem.Text = "&Longitud";
 			// 
 			// kilometrosAMillasToolStripMenuItem
@@ -170,7 +170,7 @@ namespace Trabajo14
 									this.kilogramosALToolStripMenuItem});
 			this.masaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.masaToolStripMenuItem.Name = "masaToolStripMenuItem";
-			this.masaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.masaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
 			this.masaToolStripMenuItem.Text = "&Masa";
 			// 
 			// kilogramosALToolStripMenuItem
@@ -190,7 +190,7 @@ namespace Trabajo14
 									this.celciusAFahrenheitToolStripMenuItem});
 			this.temperaturaToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.temperaturaToolStripMenuItem.Name = "temperaturaToolStripMenuItem";
-			this.temperaturaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.temperaturaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
 			this.temperaturaToolStripMenuItem.Text = "&Temperatura";
 			// 
 			// celciusAFahrenheitToolStripMenuItem
@@ -199,7 +199,7 @@ namespace Trabajo14
 			this.celciusAFahrenheitToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.celciusAFahrenheitToolStripMenuItem.Name = "celciusAFahrenheitToolStripMenuItem";
 			this.celciusAFahrenheitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-			this.celciusAFahrenheitToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+			this.celciusAFahrenheitToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
 			this.celciusAFahrenheitToolStripMenuItem.Text = "Celcius a Fahrenheit";
 			this.celciusAFahrenheitToolStripMenuItem.Click += new System.EventHandler(this.CelciusAFahrenheitToolStripMenuItemClick);
 			// 
@@ -210,7 +210,7 @@ namespace Trabajo14
 									this.segundosAHorasToolStripMenuItem});
 			this.tiempoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
 			this.tiempoToolStripMenuItem.Name = "tiempoToolStripMenuItem";
-			this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
 			this.tiempoToolStripMenuItem.Text = "&Tiempo";
 			// 
 			// segundosAHorasToolStripMenuItem
@@ -396,7 +396,7 @@ namespace Trabajo14
 			this.empleadoToolStripMenuItem1.BackColor = System.Drawing.Color.Black;
 			this.empleadoToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
 			this.empleadoToolStripMenuItem1.Name = "empleadoToolStripMenuItem1";
-			this.empleadoToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+			this.empleadoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
 			this.empleadoToolStripMenuItem1.Text = "E&mpleado";
 			this.empleadoToolStripMenuItem1.Click += new System.EventHandler(this.EmpleadoToolStripMenuItem1Click);
 			// 

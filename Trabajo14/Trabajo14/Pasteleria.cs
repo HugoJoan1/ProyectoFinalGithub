@@ -188,6 +188,61 @@ namespace Trabajo14
 				cmbProducto.SelectedIndex = -1;
 			}
 		}
+			public bool EliminarEmpleado(int Codigo, string Nombre, string Puesto, string Sexo, string Estado)
+{
+	
+    try
+    {
+    	/*
+        // Crear la conexión, configurarla y abrirla
+        MySqlConnection cn = new MySqlConnection();
+        cn.ConnectionString = "server=localhost; database=empresa; user=root; pwd=";
+        cn.Open();
+
+        // SQL para eliminar el registro con múltiples condiciones
+        string strSQL = "DELETE FROM empleados WHERE Codigo = @Codigo AND Nombre = @Nombre AND Puesto = @Puesto AND Sexo = @Sexo AND Estado = @Estado";
+
+        // Crear el comando y agregar los parámetros
+        MySqlCommand comando = new MySqlCommand(strSQL, cn);
+        comando.Parameters.AddWithValue("@Codigo", Codigo);
+        comando.Parameters.AddWithValue("@Nombre", Nombre);
+        comando.Parameters.AddWithValue("@Puesto", Puesto);
+        comando.Parameters.AddWithValue("@Sexo", Sexo);
+        comando.Parameters.AddWithValue("@Estado", Estado);
+
+        // Ejecutar la consulta
+        int filasAfectadas = comando.ExecuteNonQuery();
+
+        // Verificar si se eliminó algún registro
+        if (filasAfectadas > 0)
+        {
+            MessageBox.Show("Empleado eliminado con éxito.");
+        }
+        else
+        {
+            MessageBox.Show("No se encontró un empleado que desea eliminar, Ponga los datos Correctos del empleado que te pide el formulario");
+        }
+
+        // Finalizamos la conexión y liberamos los recursos
+        comando.Dispose();
+        cn.Close();
+        cn.Dispose();
+*/
+        return true;
+    }
+    //catch (Producto)
+    //{
+        // Manejo de errores específicos de MySQL
+        //MessageBox.Show("Error al eliminar el empleado: " + ex.Message);
+        //return false;
+    //}
+    catch (Exception ex)
+    {
+        // Manejo de errores generales
+        MessageBox.Show("Ha ocurrido un error: " + ex.Message);
+        return false;
+    }
+}
 		
 		void RdbSaladoCheckedChanged(object sender, EventArgs e)
 		{

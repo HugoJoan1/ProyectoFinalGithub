@@ -352,7 +352,7 @@ namespace Trabajo14
 			// 
 			// rdbDulce
 			// 
-			this.rdbDulce.Location = new System.Drawing.Point(286, 193);
+			this.rdbDulce.Location = new System.Drawing.Point(286, 156);
 			this.rdbDulce.Name = "rdbDulce";
 			this.rdbDulce.Size = new System.Drawing.Size(147, 35);
 			this.rdbDulce.TabIndex = 31;
@@ -363,7 +363,7 @@ namespace Trabajo14
 			// 
 			// rdbSalado
 			// 
-			this.rdbSalado.Location = new System.Drawing.Point(396, 193);
+			this.rdbSalado.Location = new System.Drawing.Point(405, 156);
 			this.rdbSalado.Name = "rdbSalado";
 			this.rdbSalado.Size = new System.Drawing.Size(147, 35);
 			this.rdbSalado.TabIndex = 32;
